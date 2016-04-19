@@ -1,0 +1,52 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{761E92C7-E4AA-2D4C-8599-F54CED120148}") = "ARGame_NICOLAS", "Assembly-CSharp.csproj", "{AD40784D-1737-A664-5E40-4E468F5E0012}"
+EndProject
+Project("{761E92C7-E4AA-2D4C-8599-F54CED120148}") = "ARGame_NICOLAS", "Assembly-CSharp-Editor.csproj", "{434072A3-2B93-1208-3E14-26E4EF0B877E}"
+EndProject
+Project("{761E92C7-E4AA-2D4C-8599-F54CED120148}") = "ARGame_NICOLAS", "Assembly-UnityScript-Editor-firstpass.unityproj", "{BCF66641-26D9-9A87-C00D-EE2DE9DAAC1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD40784D-1737-A664-5E40-4E468F5E0012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD40784D-1737-A664-5E40-4E468F5E0012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD40784D-1737-A664-5E40-4E468F5E0012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD40784D-1737-A664-5E40-4E468F5E0012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{434072A3-2B93-1208-3E14-26E4EF0B877E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{434072A3-2B93-1208-3E14-26E4EF0B877E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{434072A3-2B93-1208-3E14-26E4EF0B877E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{434072A3-2B93-1208-3E14-26E4EF0B877E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF66641-26D9-9A87-C00D-EE2DE9DAAC1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF66641-26D9-9A87-C00D-EE2DE9DAAC1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF66641-26D9-9A87-C00D-EE2DE9DAAC1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF66641-26D9-9A87-C00D-EE2DE9DAAC1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+																																																																																																															GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = null
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 120
+		$3.TabWidth = 4
+		$3.IndentWidth = 4
+		$3.EolMarker = Unix
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/plain
+		$3.scope = text/plain
+	EndGlobalSection
+
+EndGlobal

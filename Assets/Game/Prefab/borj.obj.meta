@@ -1,0 +1,158 @@
+fileFormatVersion: 2
+guid: 4f212b7f2e1695b4383e5fcca1c33a76
+timeCreated: 1458274708
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cylinder001
+    100004: Cylinder002
+    100006: Line001
+    100008: Line002
+    100010: Line003
+    100012: Line004
+    100014: Line005
+    100016: Line006
+    100018: Line007
+    100020: Line008
+    100022: Line009
+    100024: Plane002
+    100026: Plane003
+    100028: Plane004
+    100030: Tube001
+    100032: Tube002
+    100034: Tube003
+    400000: //RootNode
+    400002: Cylinder001
+    400004: Cylinder002
+    400006: Line001
+    400008: Line002
+    400010: Line003
+    400012: Line004
+    400014: Line005
+    400016: Line006
+    400018: Line007
+    400020: Line008
+    400022: Line009
+    400024: Plane002
+    400026: Plane003
+    400028: Plane004
+    400030: Tube001
+    400032: Tube002
+    400034: Tube003
+    2300000: Cylinder001
+    2300002: Cylinder002
+    2300004: Line001
+    2300006: Line002
+    2300008: Line003
+    2300010: Line004
+    2300012: Line005
+    2300014: Line006
+    2300016: Line007
+    2300018: Line008
+    2300020: Line009
+    2300022: Plane002
+    2300024: Plane003
+    2300026: Plane004
+    2300028: Tube001
+    2300030: Tube002
+    2300032: Tube003
+    3300000: Cylinder001
+    3300002: Cylinder002
+    3300004: Line001
+    3300006: Line002
+    3300008: Line003
+    3300010: Line004
+    3300012: Line005
+    3300014: Line006
+    3300016: Line007
+    3300018: Line008
+    3300020: Line009
+    3300022: Plane002
+    3300024: Plane003
+    3300026: Plane004
+    3300028: Tube001
+    3300030: Tube002
+    3300032: Tube003
+    4300000: Cylinder001
+    4300002: Cylinder002
+    4300004: Line001
+    4300006: Line002
+    4300008: Line003
+    4300010: Line004
+    4300012: Line005
+    4300014: Line006
+    4300016: Line007
+    4300018: Line008
+    4300020: Line009
+    4300022: Plane002
+    4300024: Plane003
+    4300026: Plane004
+    4300028: Tube001
+    4300030: Tube002
+    4300032: Tube003
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
