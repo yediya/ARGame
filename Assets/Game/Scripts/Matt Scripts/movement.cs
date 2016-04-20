@@ -7,15 +7,15 @@ public class movement : MonoBehaviour
 	//Our peices movement points - how far it can move per turn
 	float movP;
 
+
+
 	//Peices position
 	Vector3 pos;
 
 	Vector3 oldPos;
-	public Renderer rend;
-	public Color red = Color.red;
-	public Color white = Color.white;
+
 	public float stepSize;
-	public stats stats;
+	private stats stats;
 	public CONTROL_turns controller;
 	public int pathLength;
 	public Vector3[] path;
@@ -27,16 +27,17 @@ public class movement : MonoBehaviour
 	public float initMovP;
 	public Vector3 initPos;
 
-	private LineRenderer LineDrawer;
+	//These variables are for changing the base color
+	public Renderer rend;
+	public Color red = Color.red;
+	public Color white = Color.white;
 
 
 	// Use this for initialization
 	void Start () 
 	{
 		controller = GameObject.FindWithTag ("GameController").GetComponent<CONTROL_turns>();
-		LineDrawer = GetComponent<LineRenderer>();
-		LineDrawer.SetWidth (0.1f, 0.1f);
-
+	
 		//Read in data from stats script
 		stats = this.GetComponent<stats> ();
 
@@ -51,7 +52,7 @@ public class movement : MonoBehaviour
 
 		oldPos = gameObject.transform.position;
 
-		stepSize = 0.1f;
+		stepSize = 1.0f;
 
 		startMov = false;
 
@@ -64,13 +65,22 @@ public class movement : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		//pos = gameObject.transform.position;
+
 		if (controller.curPlayer == stats.owner) 
 		{
-			pos = gameObject.transform.position;
-			//if(controller.curPlayer == stats.owner)		
+			//If we start moving the marker, but it is so far less than our stepSize,
+			//de-sync the model on top
+			if (Math.Abs (oldPos.magnitude - pos.magnitude) < stepSize) 
+			{
+				stats.sync = false;
+			}
+
 			//If we moved greater than stepSize units, 
-			if (Math.Abs (oldPos.magnitude - pos.magnitude) > stepSize) {
-				if (startMov == false) {
+			if (Math.Abs (oldPos.magnitude - pos.magnitude) > stepSize) 
+			{
+				if (startMov == false) 
+				{
 					initPos = pos;
 					initMovP = movP;
 				}
@@ -78,11 +88,13 @@ public class movement : MonoBehaviour
 				//Object has started moving
 				startMov = true;
 			
+				//sync with marker
+				stats.sync = true;
 
-				//Save this point of the path
 				Debug.Log ("Path Length: " + pathLength);
 				Debug.Log ("Array Length: " + path.Length);
 
+				//Save this point of the path
 				path [pathLength] = pos;
 				pathLength++;
 
@@ -90,19 +102,34 @@ public class movement : MonoBehaviour
 				oldPos = pos;
 				//And reduce our movement points
 				//this.GetComponent<stats> ().movP -= Math.Abs (oldPos.magnitude - pos.magnitude);
-				if (stats.movP > 0) {
-					stats.movP -= stepSize;
+				if (stats.movP >= stepSize*(1/stats.mov_modifier)) 
+				{
+					stats.movP -= stepSize*(1/stats.mov_modifier);
+				}
+				//Will not allow to move to the point of death
+				else if(stats.hp > stepSize*(1/stats.mov_modifier))
+				{
+					stats.hp -= (int)(stepSize*(1/stats.mov_modifier));
+				}
+
+				//If we move at the cost of hit points, set the color to red
+				if (stats.movP < 0) 
+				{
+					rend.material.SetColor ("_Color", Color.red);
+				} 
+				else 
+				{
+					rend.material.SetColor ("_Color", Color.white);
 				}
 
 			}
-			//f we move too far, set the color to red
-			if (stats.movP < 0) {
-				rend.material.SetColor ("_Color", Color.red);
-				stats.valid = false;
-			} else {
-				rend.material.SetColor ("_Color", Color.white);
-				stats.valid = true;
+			else
+			{
+				//Peice should not be moved. It belongs to a player whose turn it isnt.
+
 			}
+
+	
 		}
 	}
 }

@@ -5,6 +5,8 @@ Project("{6301415D-686A-70B4-B816-861CB9A211C8}") = "ARGame", "Assembly-CSharp.c
 EndProject
 Project("{6301415D-686A-70B4-B816-861CB9A211C8}") = "ARGame", "Assembly-CSharp-Editor.csproj", "{B9552DB0-4E54-3782-49F9-A497813883FA}"
 EndProject
+Project("{6301415D-686A-70B4-B816-861CB9A211C8}") = "ARGame", "Assembly-UnityScript-Editor-firstpass.unityproj", "{48CB72FF-514E-FE01-29D7-1B4562A84CC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,15 @@ Global
 		{B9552DB0-4E54-3782-49F9-A497813883FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9552DB0-4E54-3782-49F9-A497813883FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9552DB0-4E54-3782-49F9-A497813883FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48CB72FF-514E-FE01-29D7-1B4562A84CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48CB72FF-514E-FE01-29D7-1B4562A84CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48CB72FF-514E-FE01-29D7-1B4562A84CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48CB72FF-514E-FE01-29D7-1B4562A84CC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																															GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																																											GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
