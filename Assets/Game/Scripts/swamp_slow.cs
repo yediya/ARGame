@@ -6,6 +6,7 @@ public class swamp_slow : MonoBehaviour {
 	int turn_begin;
 	int duration;
 	CONTROL_turns controller;
+	bool activated;
 
 	// Use this for initialization
 	void Start () 
@@ -13,6 +14,7 @@ public class swamp_slow : MonoBehaviour {
 		controller = GameObject.FindWithTag ("GameController").GetComponent<CONTROL_turns>();
 		turn_begin = controller.curTurn;
 		duration = 3;
+		activated = false;
 
 	}
 

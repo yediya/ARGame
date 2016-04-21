@@ -19,6 +19,7 @@ public class connectModel : MonoBehaviour {
 		{
 			model.transform.position = this.transform.position;
 			model.transform.rotation = this.transform.rotation;
+			//Debug.Log("Connected");
 		}
 	}
 }
