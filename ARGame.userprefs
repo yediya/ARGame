@@ -1,19 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Plugins\Editor\Unzip.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Game\Scripts\SPELL_fireball.cs">
     <Files>
-      <File FileName="Assets\Game\Scripts\swamp_slow.cs" Line="17" Column="3" />
-      <File FileName="Assets\Game\Scripts\Matt Scripts\movement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Game\Scripts\Matt Scripts\connectModel.cs" Line="1" Column="1" />
-      <File FileName="Assets\Game\Scripts\Matt Scripts\drawMoveRadiusStatic.cs" Line="1" Column="1" />
-      <File FileName="Assets\Game\Scripts\Matt Scripts\drawMoveRadius.cs" Line="1" Column="1" />
-      <File FileName="Assets\Game\Scripts\Matt Scripts\stats.cs" Line="1" Column="1" />
-      <File FileName="Assets\Game\Scripts\Matt Scripts\stabilise.cs" Line="1" Column="1" />
-      <File FileName="Assets\Plugins\Editor\Unzip.js" Line="1" Column="1" />
+      <File FileName="Assets\Game\Scripts\fireball_AOE.cs" Line="1" Column="1" />
+      <File FileName="Assets\Game\Scripts\SPELL_haste.cs" Line="1" Column="1" />
+      <File FileName="Assets\Game\Scripts\SPELL_fireball.cs" Line="68" Column="4" />
       <File FileName="Assets\Game\Scripts\SPELL_swamp.cs" Line="1" Column="1" />
-      <File FileName="Assets\Game\Scripts\Matt Scripts\shootFireball.cs" Line="1" Column="1" />
-      <File FileName="Assets\Game\Scripts\SPELL_meteor.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\Xkem\Documents\ARGame\ARGame\Assets\Game\Scripts\CONTROL_turns.cs" Line="1" Column="1" />
+      <File FileName="Assets\Plugins\Editor\Unzip.js" Line="1" Column="1" />
+      <File FileName="Assets\Game\Scripts\swamp_slow.cs" Line="1" Column="1" />
+      <File FileName="Assets\Game\Scripts\Matt Scripts\fireballHit.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

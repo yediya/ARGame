@@ -61,10 +61,12 @@
      <Compile Include="Assets\Game\Scripts\Matt Scripts\stabilise.cs" />
      <Compile Include="Assets\Game\Scripts\Matt Scripts\stats.cs" />
      <Compile Include="Assets\Game\Scripts\SPELL_fireball.cs" />
+     <Compile Include="Assets\Game\Scripts\SPELL_haste.cs" />
      <Compile Include="Assets\Game\Scripts\SPELL_meteor.cs" />
      <Compile Include="Assets\Game\Scripts\SPELL_swamp.cs" />
      <Compile Include="Assets\Game\Scripts\UT_printPos.cs" />
      <Compile Include="Assets\Game\Scripts\UT_stabilise.cs" />
+     <Compile Include="Assets\Game\Scripts\fireball_AOE.cs" />
      <Compile Include="Assets\Game\Scripts\swamp_slow.cs" />
      <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
      <Compile Include="Assets\Vuforia\Scripts\CloudRecoBehaviour.cs" />

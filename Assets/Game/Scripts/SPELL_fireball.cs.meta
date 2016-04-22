@@ -1,10 +1,15 @@
 fileFormatVersion: 2
 guid: 34609358ca2c36a4d92abe710162ee65
-timeCreated: 1457941533
+timeCreated: 1461284343
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - fireball_effect: {fileID: 182058, guid: 3dcb8e138d6a83a4db075ccf922f0589, type: 2}
+  - fireballPF: {fileID: 115742, guid: ed3fb1c57535d2c4ca82ed7f1ac7f114, type: 2}
+  - fireball: {instanceID: 0}
+  - player1: {instanceID: 0}
+  - player2: {instanceID: 0}
   executionOrder: 200
   icon: {instanceID: 0}
   userData: 
