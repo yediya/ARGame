@@ -12,14 +12,5 @@ public class connectModel : MonoBehaviour {
 		stats = model.GetComponent<stats>();
 	}
 	
-	// Update is called once per frame
-	void Update () 
-	{
-		if(stats.sync == true)
-		{
-			model.transform.position = this.transform.position;
-			model.transform.rotation = this.transform.rotation;
-			//Debug.Log("Connected");
-		}
-	}
+
 }

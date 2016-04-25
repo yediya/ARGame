@@ -100,6 +100,7 @@ public class movement : MonoBehaviour
 
 				//update oldPos
 				oldPos = pos;
+
 				//And reduce our movement points
 				//this.GetComponent<stats> ().movP -= Math.Abs (oldPos.magnitude - pos.magnitude);
 				if (stats.movP >= stepSize*(1/stats.mov_modifier)) 
