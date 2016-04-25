@@ -43,7 +43,7 @@ public class modelInstantiator : MonoBehaviour, ITrackableEventHandler
 			if(myModelTrf == null)
 			{
 				//myModelTrf = GameObject.Instantiate(myModelPrefab);
-				myModelTrf = (GameObject)Instantiate (myModelPrefab, this.transform.position, this.transform.rotation);
+				myModelTrf = (GameObject)Instantiate (myModelPrefab, gameObject.transform.position, gameObject.transform.rotation);
 				stats = myModelTrf.GetComponent<stats>();
 			}
 
@@ -61,9 +61,10 @@ public class modelInstantiator : MonoBehaviour, ITrackableEventHandler
 		{
 			if(stats.sync == true)
 			{
-				myModelTrf.transform.position = this.transform.position;
-				myModelTrf.transform.rotation = this.transform.rotation;
-				//Debug.Log("Connected");
+				myModelTrf.transform.position = gameObject.transform.position;
+				myModelTrf.transform.rotation = gameObject.transform.rotation;
+				myModelTrf.transform.rotation = gameObject.transform.rotation;
+				Debug.Log("Connected");
 			}
 		}
 	}

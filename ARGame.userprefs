@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Game\Scripts\Matt Scripts\modelInstantiator.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Plugins\Editor\Unzip.js">
     <Files>
-      <File FileName="Assets\Game\Scripts\Matt Scripts\connectModel.cs" Line="6" Column="2" />
+      <File FileName="Assets\Game\Scripts\Matt Scripts\movement.cs" Line="105" Column="25" />
+      <File FileName="Assets\Game\Scripts\Matt Scripts\connectModel.cs" Line="1" Column="1" />
       <File FileName="Assets\Game\Scripts\Matt Scripts\modelInstantiator.cs" Line="9" Column="34" />
       <File FileName="Assets\Game\Scripts\fireball_AOE.cs" Line="1" Column="1" />
       <File FileName="Assets\Game\Scripts\SPELL_haste.cs" Line="1" Column="1" />
@@ -11,7 +12,6 @@
       <File FileName="Assets\Plugins\Editor\Unzip.js" Line="16" Column="53" />
       <File FileName="Assets\Game\Scripts\swamp_slow.cs" Line="1" Column="1" />
       <File FileName="Assets\Game\Scripts\Matt Scripts\fireballHit.cs" Line="1" Column="1" />
-      <File FileName="Assets\Game\Scripts\Matt Scripts\movement.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

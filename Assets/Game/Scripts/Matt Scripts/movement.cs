@@ -50,6 +50,7 @@ public class movement : MonoBehaviour
 		//Access the color of the base
 		rend = GetComponent<Renderer>();
 
+		//The position just before the one we are at (saved when we move stepSize units)
 		oldPos = gameObject.transform.position;
 
 		stepSize = 1.0f;
@@ -57,18 +58,29 @@ public class movement : MonoBehaviour
 		startMov = false;
 
 		path = new Vector3[100];
-		//Debug.Log ("----------------Array Length1----------------------: " + path.Length);
 		pathLength = 0;
-	
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
 		//pos = gameObject.transform.position;
-
-		if (controller.curPlayer == stats.owner) 
+		if (controller.curPlayer != stats.owner) 
 		{
+			//Peice should not be moved. It belongs to a player whose turn it isnt.
+			if (Math.Abs (oldPos.magnitude - pos.magnitude) > 0.1) 
+			{
+				stats.valid = false;
+			}
+		}
+		else
+		{
+			//Initialise 
+			if (startMov == false) 
+			{
+				initPos = pos;
+				initMovP = movP;
+			}
 			//If we start moving the marker, but it is so far less than our stepSize,
 			//de-sync the model on top
 			if (Math.Abs (oldPos.magnitude - pos.magnitude) < stepSize) 
@@ -79,13 +91,8 @@ public class movement : MonoBehaviour
 			//If we moved greater than stepSize units, 
 			if (Math.Abs (oldPos.magnitude - pos.magnitude) > stepSize) 
 			{
-				if (startMov == false) 
-				{
-					initPos = pos;
-					initMovP = movP;
-				}
-				  
-				//Object has started moving
+
+				 //Object has started moving
 				startMov = true;
 			
 				//sync with marker
@@ -95,7 +102,7 @@ public class movement : MonoBehaviour
 				Debug.Log ("Array Length: " + path.Length);
 
 				//Save this point of the path
-				path [pathLength] = pos;
+				path [pathLength] = new Vector3 (pos.x, 0.2f, pos.z);
 				pathLength++;
 
 				//update oldPos
@@ -124,13 +131,32 @@ public class movement : MonoBehaviour
 				}
 
 			}
-			else
-			{
-				//Peice should not be moved. It belongs to a player whose turn it isnt.
 
-			}
+			//Check the lines of our path, to see if they collide with any units
+
+			RaycastHit hit;
+
+			for(int i = 0; i < pathLength; i++)
+			{
+				Vector3 line_start = path[i];
+				Vector3 line_end = path[i+1];
 
 	
+				if (Physics.Raycast (line_start, line_end - line_start, out hit)) 
+				{
+					switch(hit.transform.gameObject.tag)
+					{
+						case "unit":
+							stats.valid = false;
+						Debug.Log("collide with unit");
+							break;
+						case "other_non_passable_tag":
+							stats.valid = false;
+							break;
+
+					}
+				}
+			}
 		}
 	}
 }
