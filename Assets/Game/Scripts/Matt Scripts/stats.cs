@@ -21,7 +21,7 @@ public class stats : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		init ();	
+		init ();
 	}
 
 	void init()
@@ -34,9 +34,9 @@ public class stats : MonoBehaviour {
 		sync = true;
  		owner = -1;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public void takeDamage(int damage)
+	{
+		hp -= damage;
 	}
 }

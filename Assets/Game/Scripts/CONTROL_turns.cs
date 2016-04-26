@@ -84,6 +84,20 @@ public class CONTROL_turns: MonoBehaviour{
 		if( !init){
 
 			//PLACE THE BATTLE COMPUTATIONS HERE
+			/*
+			 * Loop through all units and get unit that matches the player number (curTurn)
+			 * for each of those units, call doAttack on that particular unit to apply damage to target units
+			 */
+			/*
+			var objects = GameObject.FindGameObjectsWithTag("unit");
+			var objectCount = objects.Length;
+			foreach (var obj in objects) {
+				if(obj.GetComponent<stats>().owner == curTurn)
+				{
+					doAttack (obj);
+				}
+			}
+			*/
 
 			yield return new WaitForSeconds( 3);
 
@@ -99,6 +113,25 @@ public class CONTROL_turns: MonoBehaviour{
 				Debug.Log( "Player2 can move now");
 			}
 		}
+	}
+
+	void doAttack(GameObject unit)
+	{
+		GameObject atkCollider = unit.transform.FindChild ("AttackArea").gameObject;
+		atkCollider.GetComponent<AttackAreaTrigger> ().fireAttack();
+		/*
+		if(
+			chara1.GetComponent<FM2>().getHitState()
+			&&
+			chara2.GetComponent<FM2>().getHitState()
+			)
+		{
+			chara1.GetComponent<FM2>().takeDmg(chara2.GetComponent<FM2>().dealDmg());
+			Debug.Log ("Chara 2 Deals " + chara2.GetComponent<FM2>().dealDmg() + " damage to Chara 1");
+			chara2.GetComponent<FM2>().takeDmg(chara1.GetComponent<FM2>().dealDmg());
+			Debug.Log ("Chara 1 Deals " + chara2.GetComponent<FM2>().dealDmg() + " damage to Chara 2");
+		}
+		*/
 	}
 
 	void OnGUI(){
